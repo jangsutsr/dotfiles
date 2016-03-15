@@ -11,7 +11,7 @@ iabbrev fucntion function
 
 set nocompatible
 set laststatus=2
-syntax enable
+syntax on
 set modelines=0
 set encoding=utf-8
 filetype indent on
@@ -100,7 +100,7 @@ else
 endif
 
 "" Commands
-source $VIMRUNTIME/mswin.vim    "allows standard windows copy/paste keystrokes
+"source $VIMRUNTIME/mswin.vim    "allows standard windows copy/paste keystrokes
 behave mswin                    "mouse behavior like windows
 
 "read .ru files as rb
@@ -246,3 +246,10 @@ nnoremap $ g$
 
 " for ag
 set runtimepath^=~/.vim/bundle/ag
+
+au BufReadPost,BufNewFile *.twig colorscheme koehler 
+au BufReadPost,BufNewFile *.css colorscheme slate
+au BufReadPost,BufNewFile *.js colorscheme slate2
+au BufReadPost,BufNewFile *.py colorscheme molokaiyo
+au BufReadPost,BufNewFile *.html colorscheme monokai
+au BufReadPost,BufNewFile *.java colorscheme monokai
