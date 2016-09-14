@@ -189,7 +189,8 @@ autocmd BufRead,BufNewFile *.py setlocal tabstop=4 shiftwidth=4 smarttab expandt
 autocmd BufRead,BufNewFile *.py set filetype=python
 autocmd BufRead,BufNewFile *.html setlocal tabstop=2 shiftwidth=2 smarttab expandtab softtabstop=2 autoindent
 autocmd BufRead,BufNewFile *.go setlocal tabstop=4 shiftwidth=4 smarttab expandtab softtabstop=4 autoindent
-autocmd BufRead,BufNewFile *.c setlocal tabstop=4 shiftwidth=4 smarttab expandtab softtabstop=4 autoindent
+autocmd BufRead,BufNewFile *.c setlocal tabstop=8 shiftwidth=8 smarttab noexpandtab softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0
+autocmd BufRead,BufNewFile *.h setlocal tabstop=8 shiftwidth=8 smarttab noexpandtab softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0
 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-R> :call <SID>SynStack()<CR>
@@ -246,10 +247,11 @@ nnoremap $ g$
 
 " for ag
 set runtimepath^=~/.vim/bundle/ag
+set runtimepath^=~/.vim/bundle/linuxsty.vim
 
 au BufReadPost,BufNewFile *.twig colorscheme koehler 
 au BufReadPost,BufNewFile *.css colorscheme slate
-au BufReadPost,BufNewFile *.js colorscheme slate2
+au BufReadPost,BufNewFile *.js colorscheme monokai
 au BufReadPost,BufNewFile *.py colorscheme molokaiyo
 au BufReadPost,BufNewFile *.html colorscheme monokai
 au BufReadPost,BufNewFile *.java colorscheme monokai
