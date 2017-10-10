@@ -190,8 +190,8 @@ autocmd BufRead,BufNewFile *.js setlocal tabstop=2 shiftwidth=2 smarttab expandt
 autocmd BufRead,BufNewFile *.py set filetype=python
 autocmd BufRead,BufNewFile *.html setlocal tabstop=2 shiftwidth=2 smarttab expandtab softtabstop=2 autoindent
 autocmd BufRead,BufNewFile *.go setlocal tabstop=4 shiftwidth=4 smarttab expandtab softtabstop=4 autoindent
-autocmd BufRead,BufNewFile *.c setlocal tabstop=8 shiftwidth=8 smarttab noexpandtab softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0
-autocmd BufRead,BufNewFile *.h setlocal tabstop=8 shiftwidth=8 smarttab noexpandtab softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0
+autocmd BufRead,BufNewFile *.c setlocal tabstop=4 shiftwidth=4 smarttab noexpandtab softtabstop=4 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0
+autocmd BufRead,BufNewFile *.h setlocal tabstop=4 shiftwidth=4 smarttab noexpandtab softtabstop=4 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0
 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-R> :call <SID>SynStack()<CR>
