@@ -256,3 +256,10 @@ au BufReadPost,BufNewFile *.js colorscheme monokai
 au BufReadPost,BufNewFile *.py colorscheme molokaiyo
 au BufReadPost,BufNewFile *.html colorscheme monokai
 au BufReadPost,BufNewFile *.java colorscheme monokai
+
+if exists('+colorcolumn')
+  set colorcolumn=100
+  highlight colorcolumn ctermbg=7
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100.\+', -1)
+endif
