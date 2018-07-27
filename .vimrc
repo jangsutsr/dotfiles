@@ -189,6 +189,7 @@ let python_highlight_all=1
 autocmd BufRead,BufNewFile *.py setlocal tabstop=4 shiftwidth=4 smarttab expandtab softtabstop=4 autoindent
 autocmd BufRead,BufNewFile *.js setlocal tabstop=2 shiftwidth=2 smarttab expandtab softtabstop=2 autoindent
 autocmd BufRead,BufNewFile *.py set filetype=python
+autocmd BufRead,BufNewFile *.pyi set filetype=python
 autocmd BufRead,BufNewFile *.html setlocal tabstop=2 shiftwidth=2 smarttab expandtab softtabstop=2 autoindent
 autocmd BufRead,BufNewFile *.go setlocal tabstop=4 shiftwidth=4 smarttab expandtab softtabstop=4 autoindent
 autocmd BufRead,BufNewFile *.c setlocal tabstop=4 shiftwidth=4 smarttab noexpandtab softtabstop=4 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0
