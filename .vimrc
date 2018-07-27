@@ -120,7 +120,7 @@ nnoremap <Leader><Leader>v :e $MYVIMRC
 let NERDTreeShowBookmarks  = 1
 let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
-let NERDTreeWinSize=60
+let NERDTreeWinSize = winwidth('%') / 4
 map <leader>n :NERDTreeToggle <cr>
 
 "Bufexplorer
