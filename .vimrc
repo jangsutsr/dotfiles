@@ -120,6 +120,7 @@ nnoremap <Leader><Leader>v :e $MYVIMRC
 let NERDTreeShowBookmarks  = 1
 let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
+let NERDTreeWinSize=60
 map <leader>n :NERDTreeToggle <cr>
 
 "Bufexplorer
@@ -263,3 +264,5 @@ if exists('+colorcolumn')
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100.\+', -1)
 endif
+
+set complete-=i
