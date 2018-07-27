@@ -229,6 +229,11 @@ nnoremap <Leader><Leader>r :RustRun
 " settings for Go
 nnoremap <Leader><Leader>g :GoRun
 
+" settings for markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+let g:markdown_syntax_conceal = 0
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 " for wrapping
 nnoremap j gj
 nnoremap k gk
